@@ -1,0 +1,81 @@
+c. Write a program to apply different types (or levels of styles or style specification formats)
+- inline, internal, external styles to HTML elements. (identify selector, property and value)
+
+.
+
+📝 Description:
+In this experiment, an HTML document is created to show three different ways of applying styles to web elements:
+
+1️⃣ Inline CSS
+Style is written directly inside the HTML tag using the style attribute.
+Example:
+html
+Copy
+Edit
+<h1 style="color: red; font-size: 24px; text-align: center;">
+Selector: h1 (HTML tag)
+Properties: color, font-size, text-align
+Values: red, 24px, center
+
+2️⃣ Internal CSS
+Style is placed within the <style> tag in the <head> section.
+Targets elements using class selectors.
+Example:
+css
+Copy
+Edit
+.internal-style {
+  color: blue;
+  font-size: 20px;
+  text-align: center;
+}
+Selector: .internal-style
+Properties: color, font-size, text-align
+Values: blue, 20px, center
+
+3️⃣ External CSS
+An external stylesheet is linked using:
+html
+Copy
+Edit
+<link rel="stylesheet" href="styles.css">
+The external file styles.css (not shown here) includes a rule for:
+css
+Copy
+Edit
+.external-style {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+Selector: .external-style
+Properties: color, font-weight, text-align
+Values: green, bold, center
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Styling Methods</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Internal CSS */
+    .internal-style {
+      color: blue;
+      font-size: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="color: red; font-size: 24px; text-align: center;">This is Inline CSS</h1>
+
+  <p class="internal-style">This is styled using Internal CSS.</p>
+
+  <div class="external-style">This is styled using External CSS.</div>
+
+</body>
+</html>
