@@ -18,3 +18,25 @@
 
 </body>
 </html>
+
+
+
+
+-----------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Images</title>
+</head>
+<body>
+    <h2>My Profile</h2>
+    <a href="https://example.com/myprofile">
+        <img src="myimage.jpg" alt="My Image" width="200" height="200">
+    </a>
+
+    <h2>Friend's Profile</h2>
+    <a href="https://example.com/friendprofile">
+        <img src="friendimage.jpg" alt="Friend's Image" width="200" height="200">
+    </a>
+</body>
+</html>
