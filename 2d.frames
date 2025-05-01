@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+  "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+  <title>Frame Example</title>
+</head>
+<frameset cols="33%, 34%, 33%">
+  <frame src="image.html" name="imageFrame">
+  <frame src="paragraph.html" name="paragraphFrame">
+  <frame src="link.html" name="linkFrame">
+  <noframes>
+    <body>
+      <p>Your browser does not support frames. Please upgrade your browser.</p>
+    </body>
+  </noframes>
+</frameset>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Frame</title>
+</head>
+<body>
+  <img src="image.jpg" alt="Sample Image" width="100%" height="100%">
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paragraph Frame</title>
+</head>
+<body>
+  <p>This is a sample paragraph displayed in the second frame.</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Link Frame</title>
+</head>
+<body>
+  <a href="https://www.example.com" target="_blank">Visit Example</a>
+</body>
+</html>
