@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thumbnail Technique</title>
+</head>
+<body>
+
+  <h1>Thumbnail</h1>
+
+  <a href="./large.jpg" target="_blank">
+    <img src="./small.jpg" alt="Thumbnail Image" style="width:100px; height:100px;">
+  </a>
+
+</body>
+</html>
