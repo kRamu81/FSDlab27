@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hyperlink Example</title>
+</head>
+<body>
+
+  <h1>Just Google this</h1>
+  <a href="http://google.com/" target="_blank">Google</a>
+
+</body>
+</html>
