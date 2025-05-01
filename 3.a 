@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic HTML Example</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #333; color: white; text-align: center; padding: 1em; }
+    nav { background: #555; padding: 1em; }
+    nav a { color: white; margin: 10px; text-decoration: none; }
+    main { display: flex; padding: 20px; }
+    article { flex: 2; padding: 20px; background: #f4f4f4; }
+    aside { flex: 1; padding: 20px; background: #ddd; }
+    figure { text-align: center; }
+    figcaption { font-style: italic; }
+    section { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <article>
+      <section>
+        <h2>Article Title</h2>
+        <p>This is a sample article content with a <span style="color: red;">highlighted word</span>.</p>
+        <figure>
+          <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+          <figcaption>An example image with caption.</figcaption>
+        </figure>
+      </section>
+    </article>
+
+    <aside>
+      <h3>Related Info</h3>
+      <p>This is some additional information in the sidebar.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
