@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Lists</title>
+</head>
+<body>
+
+  <h1>HTML LINKS and Image title</h1>
+
+  <h2>Ordered List</h2>
+  <ol>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+  </ol>
+
+  <h2>Unordered List</h2>
+  <ul>
+    <li>Car</li>
+    <li>Bike</li>
+    <li>Bus</li>
+  </ul>
+
+  <h2>Nested Lists</h2>
+  <ul>
+    <li>Fruits
+      <ul>
+        <li>Mango</li>
+        <li>Orange</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Ordered List inside Unordered List</h2>
+  <ul>
+    <li>Programming Language
+      <ol>
+        <li>Python</li>
+        <li>Java</li>
+      </ol>
+    </li>
+  </ul>
+
+  <h2>Definition List</h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Hypertext Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheet</dd>
+  </dl>
+
+</body>
+</html>
