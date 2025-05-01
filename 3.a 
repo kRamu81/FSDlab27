@@ -1,3 +1,7 @@
+3a. Write an HTML program that makes use of <article>, <aside>, <figure>, <figcaption>, <footer>, <header>, <main>, <nav>, <section>, <div>, <span> tags:
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
