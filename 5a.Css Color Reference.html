@@ -1,0 +1,88 @@
+a. Write a program to demonstrate the various ways you can reference a color in CSS.
+
+Description: CSS Color Reference Demonstration
+
+This program showcases six different methods of specifying colors in CSS. It uses HTML for structure and internal CSS for styling. Each <div> element is styled using a different CSS color format to illustrate how colors can be defined:
+
+CSS Color Reference – Key Points
+
+Named Color – Uses predefined color names (e.g., red).
+
+Hexadecimal – Specifies colors using hex codes (e.g., #00FF00).
+
+RGB – Defines color using red, green, blue values (e.g., rgb(0, 0, 255)).
+
+RGBA – Adds transparency to RGB using alpha (e.g., rgba(255, 165, 0, 0.6)).
+
+HSL – Uses hue, saturation, and lightness (e.g., hsl(120, 100%, 25%)).
+
+HSLA – Adds alpha (transparency) to HSL (e.g., hsla(300, 100%, 50%, 0.5)).
+
+-----------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Color Reference Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .named-color {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .hex-color {
+            background-color: #00FF00;
+            color: black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .rgb-color {
+            background-color: rgb(0, 0, 255);
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .rgba-color {
+            background-color: rgba(255, 165, 0, 0.6);
+            color: black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .hsl-color {
+            background-color: hsl(120, 100%, 25%);
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .hsla-color {
+            background-color: hsla(300, 100%, 50%, 0.5);
+            color: black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="named-color">This uses a named color: red</div>
+    <div class="hex-color">This uses a hex color: #00FF00</div>
+    <div class="rgb-color">This uses RGB color: rgb(0, 0, 255)</div>
+    <div class="rgba-color">This uses RGBA color: rgba(255, 165, 0, 0.6)</div>
+    <div class="hsl-color">This uses HSL color: hsl(120, 100%, 25%)</div>
+    <div class="hsla-color">This uses HSLA color: hsla(300, 100%, 50%, 0.5)</div>
+
+</body>
+</html>
