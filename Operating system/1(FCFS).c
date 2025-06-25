@@ -1,3 +1,40 @@
+/*✅ Algorithm: FCFS Scheduling (Without Arrival Time)
+Step 1: Start
+
+Step 2: Declare the necessary variables:
+
+Arrays for Burst Time bt[], Waiting Time wt[], Turnaround Time tat[]
+
+Integer variables: i, n
+
+Float variables: wtavg, tatavg for averages
+
+Step 3: Input the number of processes n
+
+Step 4: For each process i from 0 to n-1, do:
+  → Input the Burst Time bt[i]
+
+Step 5: Initialize:
+  → wt[0] = 0 (First process has no waiting time)
+  → tat[0] = bt[0] (TAT = BT for first process)
+  → wtavg = 0
+  → tatavg = tat[0]
+
+Step 6: For each process i from 1 to n-1, do:
+  → Calculate Waiting Time: wt[i] = wt[i-1] + bt[i-1]
+  → Calculate Turnaround Time: tat[i] = wt[i] + bt[i]
+  → Add wt[i] to wtavg
+  → Add tat[i] to tatavg
+
+Step 7: Display the table of:
+  → Process Number, Burst Time, Waiting Time, Turnaround Time
+
+Step 8: Calculate and display average waiting time: wtavg / n
+  → Calculate and display average turnaround time: tatavg / n
+
+Step 9: Stop
+*/
+
 #include <stdio.h>
 
 int main()
