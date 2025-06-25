@@ -72,15 +72,16 @@ int main() {
         awt += wa[i];
     }
 
-    // Display average times
-    printf("\nAverage Turnaround Time = %.2f", att / n);
-    printf("\nAverage Waiting Time    = %.2f", awt / n);
+    
 
     // Print detailed results
     printf("\n\nPROCESS\tBURST TIME\tWAITING TIME\tTURNAROUND TIME\n");
     for (i = 0; i < n; i++) {
         printf("P%d\t%d\t\t%d\t\t%d\n", i + 1, ct[i], wa[i], tat[i]);
     }
+  // Display average times
+    printf("\nAverage Turnaround Time = %.2f", att / n);
+    printf("\nAverage Waiting Time    = %.2f", awt / n);
 
-    return 0;
+    
 }
