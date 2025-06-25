@@ -52,8 +52,8 @@ FROM student;
 -- | name    | full_name    | lpad      | rpad      | ltrim   | rtrim   | lower    | upper    | initcap  | len | sub | pos |
 -- |---------|--------------|-----------|-----------|---------|---------|----------|----------|----------|-----|-----|-----|
 -- | rameash | rameash Kumar| ***rameash| rameash---| rameash | rameash | rameash  | RAMEASH  | Rameash  | 7   | ram | 2   |
--- | saijohn | saijohn Kumar| **saijohn | saijohn---| saijohn | saijohn | saijohn  | SAIJOHN  | Saijohn  | 7   | sai | 3   |
--- | sitash  | sitash Kumar | ***sitash | sitash----| sitash  | sitash  | sitash   | SITASH   | Sitash   | 6   | sit | 2   |
+-- | saijohn | saijohn Kumar| **saijohn | saijohn---| saijohn | saijohn | saijohn  | SAIJOHN  | Saijohn  | 7   | sai | 2   |
+-- | sitash  | sitash Kumar | ***sitash | sitash----| sitash  | sitash  | sitash   | SITASH   | Sitash   | 6   | sit | 4   |
 
 -----------------------------------------------------
 -- Step 6: Date Functions (Assuming SYSDATE is 24-JUN-2025)
