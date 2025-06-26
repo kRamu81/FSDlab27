@@ -17,13 +17,8 @@ Multiple video formats are used to ensure compatibility.
 Internal <style> tag: Used to apply CSS directly within the document for layout, typography, and spacing.
   
 --------------------------------------------------------------------------------------------------------------------------------------------------
+*****************note:If you want to add css for styling it not necessary lab examnination********************
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Embedding Audio and Video</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
     header, footer { background: #333; color: white; text-align: center; padding: 1em; }
@@ -34,42 +29,27 @@ Internal <style> tag: Used to apply CSS directly within the document for layout,
     figcaption { font-style: italic; }
     section { margin-bottom: 20px; }
   </style>
+
+
+html code---------------------------------------------------
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Audio and Video Example</title>
 </head>
 <body>
 
-  <header>
-    <h1>Embedding Audio and Video</h1>
-  </header>
+<h2>Audio Example</h2>
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support audio.
+</audio>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
-
-  <main>
-    <section>
-      <h2>Audio Example</h2>
-      <audio controls>
-        <source src="audio.mp3" type="audio/mpeg">
-        <source src="audio.ogg" type="audio/ogg">
-        Your browser does not support the audio element.
-      </audio>
-    </section>
-
-    <section>
-      <h2>Video Example</h2>
-      <video width="600" controls>
-        <source src="video.mp4" type="video/mp4">
-        <source src="video.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-      </video>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 My Website. All rights reserved.</p>
-  </footer>
+<h2>Video Example</h2>
+<video width="320" height="240" controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support video.
+</video>
 
 </body>
 </html>
