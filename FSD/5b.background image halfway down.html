@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Image Example</title>
+  <style>
+    body {
+      height: 2000px; /* Allows scrolling */
+      background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80");
+      background-repeat: no-repeat;
+      background-position: center 50%;
+      background-attachment: fixed;
+      transform: scaleX(-1);
+    }
+
+    h1 {
+      text-align: center;
+      padding-top: 100px;
+      transform: scaleX(-1); /* Flips text back to normal */
+    }
+  </style>
+</head>
+<body>
+  <h1>Scroll to see fixed, flipped background</h1>
+</body>
+</html>
