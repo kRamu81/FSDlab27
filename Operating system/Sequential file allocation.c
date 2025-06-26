@@ -1,36 +1,44 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
-    int file[50], i, startBlock, length, j, flag = 0;
+    int f[50], i, st, len, j, c;
 
-    for(i = 0; i < 50; i++)
-        file[i] = 0;  // Initially all blocks are free
+    // Step 1: Initialize all disk blocks as free (0)
+    for (i = 0; i < 50; i++)
+        f[i] = 0;
 
-    int n;
-    printf("Enter the number of files: ");
-    scanf("%d", &n);
+    // Step 2: Repeat until user exits
+    do {
+        printf("\nEnter the starting block and length of the file: ");
+        scanf("%d%d", &st, &len);
 
-    for(i = 0; i < n; i++) {
-        printf("\nEnter starting block and length of file %d: ", i+1);
-        scanf("%d %d", &startBlock, &length);
+        int flag = 0;
 
-        flag = 0;
-        for(j = startBlock; j < (startBlock + length); j++) {
-            if(file[j] == 1) {
+        // Step 3: Check availability of required blocks
+        for (j = st; j < (st + len); j++) {
+            if (f[j] != 0) {
                 flag = 1;
                 break;
             }
         }
 
-        if(flag == 0) {
-            for(j = startBlock; j < (startBlock + length); j++) {
-                file[j] = 1;  // Allocate blocks
+        // Step 4: Allocate if available
+        if (flag == 0) {
+            for (j = st; j < (st + len); j++) {
+                f[j] = 1;
+                printf("Block %d allocated.\n", j);
             }
-            printf("File %d allocated from block %d to %d\n", i+1, startBlock, startBlock + length - 1);
+            printf("File allocated successfully!\n");
         } else {
-            printf("File %d cannot be allocated due to overlapping blocks.\n", i+1);
+            printf("Block(s) already allocated. File cannot be allocated.\n");
         }
-    }
+
+        // Step 5: Ask if more files are to be allocated
+        printf("Do you want to enter more files? (Yes - 1 / No - 0): ");
+        scanf("%d", &c);
+
+    } while (c == 1);
 
     return 0;
 }
