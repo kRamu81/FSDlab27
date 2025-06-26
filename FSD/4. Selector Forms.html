@@ -38,46 +38,32 @@ Select elements based on attribute values (input[type="text"]).
 
 Html code-----------------------------
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors Example</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>CSS Selectors Demo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Simple Selectors -->
-    <h1>Simple Selector Example</h1>
-    <p id="unique">This is an ID selector example.</p>
-    <p class="highlight">This is a Class selector example.</p>
-    <p class="highlight">Another paragraph with the same class.</p>
+  <h1 id="main">Welcome to CSS Selectors Demo</h1>
 
-    <!-- Combinator Selectors -->
-    <div class="parent">
-        <p>This is a descendant selector example.</p>
-        <span>
-            <p>This is a child selector example.</p>
-        </span>
-    </div>
+  <div>
+    <p class="highlight">This is inside a div.</p>
+  </div>
 
-    <div>
-        <h2>Adjacent and General Sibling Selectors</h2>
-        <p class="adjacent">Adjacent sibling paragraph.</p>
-        <p>General sibling paragraph.</p>
-    </div>
+  <h2>Subheading</h2>
+  <p>This paragraph comes right after h2.</p>
+  <p>Another paragraph after h2.</p>
 
-    <!-- Pseudo-class Selectors -->
-    <a href="#">Hover over me</a>
-    <button>Click me</button>
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+  </ul>
 
-    <!-- Pseudo-element Selectors -->
-    <p class="pseudo-element">This paragraph has a pseudo-element.</p>
+  <a href="#">Hover over this link</a><br><br>
 
-    <!-- Attribute Selectors -->
-    <input type="text" placeholder="Type something...">
-    <input type="email" placeholder="Enter email">
-    <button disabled>Disabled Button</button>
+  <input type="text" placeholder="Text input" />
+  <input type="password" placeholder="Password input" />
 
 </body>
 </html>
@@ -85,63 +71,29 @@ Html code-----------------------------
 css code--------------------------------
 
 /* Simple Selectors */
-h1 {
-    color: darkblue;
-}
-
-#unique {
-    color: green;
-}
-
-.highlight {
-    background-color: yellow;
-}
+h1 { color: red; }
+#main { background-color: lightblue; }
+.highlight { font-weight: bold; }
+p, li { font-size: 16px; }
+* { font-family: Arial; }
 
 /* Combinator Selectors */
-.parent p {
-    color: red; /* Descendant */
-}
+div p { color: green; }
+div > p { background-color: yellow; }
+h2 + p { color: blue; }
+h2 ~ p { font-style: italic; }
 
-.parent > span > p {
-    font-style: italic; /* Child */
-}
+/* Pseudo-Class Selectors */
+a:hover { color: orange; }
+li:first-child { color: purple; }
+input:focus { border: 2px solid red; }
 
-.adjacent + p {
-    font-weight: bold; /* Adjacent sibling */
-}
+/* Pseudo-Element Selectors */
+p::first-letter { font-size: 24px; color: brown; }
+p::after { content: " [End]"; color: gray; }
 
-.adjacent ~ p {
-    text-decoration: underline; /* General sibling */
-}
-
-/* Pseudo-class Selectors */
-a:hover {
-    color: orange;
-}
-
-button:active {
-    background-color: lightgray;
-}
-
-/* Pseudo-element Selectors */
-.pseudo-element::first-letter {
-    font-size: 200%;
-    color: purple;
-}
-
-/* Attribute Selectors */
-input[type="text"] {
-    border: 2px solid blue;
-}
-
-input[type="email"] {
-    border: 2px dashed green;
-}
-
-button[disabled] {
-    background-color: lightgray;
-    color: gray;
-}
+/* Attribute Selector */
+input[type="text"] { background-color: lightyellow; }
 
 -------------------------------------------
 
