@@ -25,26 +25,32 @@ Inline CSS is also used with <span> to demonstrate inline styling.
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Semantic Tags Example with CSS</title>
+  <title>Semantic HTML Example</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f0f0f0;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
     }
 
     nav {
-      background-color: #333;
-      padding: 10px;
+      background-color: #555;
       text-align: center;
+      padding: 10px;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      margin: 0 10px;
     }
 
     nav a:hover {
@@ -53,26 +59,36 @@ Inline CSS is also used with <span> to demonstrate inline styling.
 
     main {
       display: flex;
-      margin: 20px;
+      padding: 20px;
     }
 
     article {
       flex: 2;
-      padding: 20px;
       background-color: white;
+      padding: 15px;
       margin-right: 10px;
-      border-radius: 8px;
+      border-radius: 5px;
     }
 
     aside {
       flex: 1;
-      padding: 20px;
-      background-color: #e9e9e9;
-      border-radius: 8px;
+      background-color: #e0e0e0;
+      padding: 15px;
+      border-radius: 5px;
     }
 
-    h2, h3 {
-      color: #333;
+    figure {
+      margin-top: 15px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      font-size: 14px;
+      color: #555;
     }
 
     span {
@@ -80,24 +96,17 @@ Inline CSS is also used with <span> to demonstrate inline styling.
       font-weight: bold;
     }
 
-    figure {
-      margin: 20px 0;
-    }
-
-    figcaption {
-      font-style: italic;
-      font-size: 14px;
-      color: #666;
-    }
-
-    img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 6px;
+    footer {
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
+
+<header>
+  <h1>Welcome to My Website</h1>
+  <p>Learning Semantic HTML</p>
+</header>
 
 <nav>
   <a href="#">Home</a>
@@ -109,13 +118,10 @@ Inline CSS is also used with <span> to demonstrate inline styling.
   <article>
     <section>
       <h2>Article Title</h2>
-      <p>
-        This is sample article content with 
-        <span>highlighted word</span>.
-      </p>
+      <p>This is sample article content with a <span>highlighted word</span>.</p>
 
       <figure>
-        <img src="https://via.placeholder.com/300" alt="placeholder image">
+        <img src="https://via.placeholder.com/300" alt="Sample image">
         <figcaption>An example image with caption</figcaption>
       </figure>
     </section>
@@ -126,6 +132,10 @@ Inline CSS is also used with <span> to demonstrate inline styling.
     <p>This is some additional information in the sidebar.</p>
   </aside>
 </main>
+
+<footer>
+  <p>&copy; 2025 My Website. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
