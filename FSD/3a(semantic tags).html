@@ -22,103 +22,110 @@ Inline CSS is also used with <span> to demonstrate inline styling.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Semantic Tags Example</title>
-</head>
-<body>
-
-<header>
-  <h1>My Website</h1>
-</header>
-
-<nav>
-  <a href="#">Home</a> |
-  <a href="#">About</a>
-</nav>
-
-<main>
-  <section>
-    <article>
-      <h2>Article Title</h2>
-      <p>This is the main article content.</p>
-    </article>
-
-    <aside>
-      <p>This is a side note related to the article.</p>
-    </aside>
-
-    <figure>
-      <img src="https://via.placeholder.com/150" alt="Sample Image">
-      <figcaption>Sample image with caption</figcaption>
-    </figure>
-  </section>
-</main>
-
-<footer>
-  <p>&copy; 2025 My Website</p>
-</footer>
-
-</body>
-</html>
-
-
-
-css code--------------------------------
-
-
+  <title>Semantic Tags Example with CSS</title>
+  <style>
     body {
-      font-family: Arial;
-      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
       margin: 0;
-    }
-
-    header, footer {
-      background-color: #3366cc;
-      color: white;
-      text-align: center;
-      padding: 10px;
+      padding: 0;
+      background-color: #f4f4f4;
     }
 
     nav {
-      background-color: #dddddd;
+      background-color: #333;
+      padding: 10px;
       text-align: center;
-      padding: 8px;
     }
 
     nav a {
-      margin: 0 10px;
+      color: white;
+      margin: 0 15px;
       text-decoration: none;
-      color: #3366cc;
       font-weight: bold;
     }
 
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     main {
-      padding: 15px;
+      display: flex;
+      margin: 20px;
     }
 
     article {
+      flex: 2;
+      padding: 20px;
       background-color: white;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
+      margin-right: 10px;
+      border-radius: 8px;
     }
 
     aside {
-      background-color: #ffffcc;
-      padding: 10px;
-      margin-bottom: 10px;
+      flex: 1;
+      padding: 20px;
+      background-color: #e9e9e9;
+      border-radius: 8px;
+    }
+
+    h2, h3 {
+      color: #333;
+    }
+
+    span {
+      color: red;
+      font-weight: bold;
     }
 
     figure {
-      text-align: center;
-      margin: 10px 0;
+      margin: 20px 0;
     }
 
     figcaption {
       font-style: italic;
-      color: #555;
+      font-size: 14px;
+      color: #666;
     }
-  
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<main>
+  <article>
+    <section>
+      <h2>Article Title</h2>
+      <p>
+        This is sample article content with 
+        <span>highlighted word</span>.
+      </p>
+
+      <figure>
+        <img src="https://via.placeholder.com/300" alt="placeholder image">
+        <figcaption>An example image with caption</figcaption>
+      </figure>
+    </section>
+  </article>
+
+  <aside>
+    <h3>Related Info</h3>
+    <p>This is some additional information in the sidebar.</p>
+  </aside>
+</main>
+
+</body>
+</html>
